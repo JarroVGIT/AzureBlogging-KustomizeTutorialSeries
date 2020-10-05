@@ -1,0 +1,45 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-service-overlay
+  namespace: custom-namespace-name
+spec:
+  ports:
+  - name: portname
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: my-app
+  type: ClusterIP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: my-app
+  name: my-deployment-overlay
+  namespace: custom-namespace-name
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      containers:
+      - image: nginx
+        name: my-container
+        ports:
+        - containerPort: 80
+          name: MYAPP
+        resources:
+          limits:
+            cpu: 100m
+            memory: 100Mi
+          requests:
+            cpu: 100m
+            memory: 100Mi
