@@ -3,3 +3,6 @@ resources:
 
 commonLabels:
     our-first-common-label: its-everywhere
+
+commonAnnotations:
+    our.first.annotation: "Fantastic use of annotation!"
