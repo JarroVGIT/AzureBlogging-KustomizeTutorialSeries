@@ -9,3 +9,8 @@ commonAnnotations:
 
 namePrefix: tfpref-
 nameSuffix: -tfsuf
+
+images:
+- name: nginx
+  newName: httpd
+  newTag: "2.4"
