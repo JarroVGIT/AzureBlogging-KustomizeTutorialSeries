@@ -6,3 +6,6 @@ commonLabels:
 
 commonAnnotations:
     our.first.annotation: "Fantastic use of annotation!"
+
+namePrefix: tfpref-
+nameSuffix: -tfsuf
