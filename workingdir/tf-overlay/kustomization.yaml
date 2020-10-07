@@ -1,0 +1,5 @@
+resources:
+    - ../base
+
+commonLabels:
+    our-first-common-label: its-everywhere
