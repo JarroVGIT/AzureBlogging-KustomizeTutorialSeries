@@ -1,0 +1,7 @@
+nameReference:
+- kind: Deployment                         # (1)
+  version: v1
+  fieldSpecs:
+  - kind: aCustomResource                  # (2)
+    path: spec/some-spec/deployment-ref    # (3)
+    version: v1

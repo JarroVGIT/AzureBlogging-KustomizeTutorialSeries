@@ -1,2 +1,7 @@
 resources:
     - ../base
+
+configurations:
+    - conf-namereference.yaml
+
+nameSuffix: -t
