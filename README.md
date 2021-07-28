@@ -3,7 +3,7 @@ This repository will hold files that can be used in following the tutorial serie
 
 The URL of this tutorial is:
 
-Part 1:
+Part 1: URL
 
 Part 2:
 
